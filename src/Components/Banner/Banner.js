@@ -1,10 +1,11 @@
 import { Container, makeStyles, Typography } from '@material-ui/core'
 import React from 'react'
 import {Carousel} from './Carousel';
+import bgimg from './bg.jpg'
 
 const useStyles = makeStyles(()=>({
     bg:{
-        backgroundImage:'url(https://img.freepik.com/free-vector/abstract-technological-background_23-2148897676.jpg?t=st=1653283108~exp=1653283708~hmac=473a0374ce54d6d44905f7cf365601fc343608c78fb7310a5035989c1c5d4ff0&w=1380)',
+        backgroundImage:`URL(${bgimg})`,
         width:'100%',
         backgroundSize:'cover'},
 
@@ -39,7 +40,7 @@ export const Banner = () => {
         <Container className={classes.bannerContent}>
         <div className={classes.tagline}>
           <Typography
-            variant="h2"
+            variant="h3"
             style={{
               fontWeight: "bold",
               marginBottom: 15,
