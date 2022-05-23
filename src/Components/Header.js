@@ -16,9 +16,10 @@ import { CryptoState } from "../CryptoContext";
 const useStyles = makeStyles(() => ({
   title: {
     flex: 1,
-    color: "#ECEFF1",
+    color: "rgb(255, 153, 51)",
     cursor: "pointer",
     fontWeight: "bold",
+    fontFamily:'Montserrat'
   },
 }));
 
@@ -42,15 +43,16 @@ const Header = () => {
           <Toolbar>
             <Typography
               onClick={() => navigate("/")}
-              variant="h5"
+              variant="h6"
               className={classes.title}
             >
               Crypto Tracker
             </Typography>
             <Select
               variant="outlined"
-              style={{ width: 100, heigth: 40, marginRight: 15 }}
+              style={{ width:90, heigth: 10, marginRight: 15 }}
               value={currency}
+            
               onChange={(e)=>setCurrency(e.target.value)}
             >
               <MenuItem value={"INR"}>INR</MenuItem>

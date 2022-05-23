@@ -42,7 +42,7 @@ export const Banner = () => {
           <Typography
             variant="h3"
             style={{
-              fontWeight: "bold",
+              fontWeight: 'bold',
               marginBottom: 15,
               fontFamily: "Montserrat",
             }}
