@@ -7,6 +7,8 @@ import {
   Toolbar,
   Typography,
   ThemeProvider,
+  FormControl,
+  InputLabel,
 } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/node_modules/@material-ui/styles";
 import React from "react";
@@ -43,21 +45,25 @@ const Header = () => {
           <Toolbar>
             <Typography
               onClick={() => navigate("/")}
-              variant="h6"
+              variant="h5"
               className={classes.title}
             >
               Crypto Tracker
             </Typography>
+            <FormControl  size="small">
+            <InputLabel  id="demo-select-small"> Currency </InputLabel>
             <Select
-              variant="outlined"
-              style={{ width:90, heigth: 10, marginRight: 15 }}
+              labelId="demo-select-small"
+              id="demo-select-small"
+              style={{ width:100, heigth: 20,marginLeft:0}}
               value={currency}
-            
+              size="small"
               onChange={(e)=>setCurrency(e.target.value)}
             >
               <MenuItem value={"INR"}>INR</MenuItem>
               <MenuItem value={"USD"}>USD</MenuItem>
             </Select>
+            </FormControl>
           </Toolbar>
         </Container>
       </AppBar>
