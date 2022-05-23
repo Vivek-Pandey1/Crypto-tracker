@@ -3,7 +3,11 @@ import React from 'react'
 import {Carousel} from './Carousel';
 
 const useStyles = makeStyles(()=>({
-    bg:{backgroundImage:'url(https://img.freepik.com/free-vector/abstract-technological-background_23-2148897676.jpg?t=st=1653283108~exp=1653283708~hmac=473a0374ce54d6d44905f7cf365601fc343608c78fb7310a5035989c1c5d4ff0&w=1380)'},
+    bg:{
+        backgroundImage:'url(https://img.freepik.com/free-vector/abstract-technological-background_23-2148897676.jpg?t=st=1653283108~exp=1653283708~hmac=473a0374ce54d6d44905f7cf365601fc343608c78fb7310a5035989c1c5d4ff0&w=1380)',
+        width:'100%',
+        backgroundSize:'cover'},
+
     bannerContent:{
         height:400,
         display:'flex',
@@ -30,7 +34,7 @@ export const Banner = () => {
     const classes = useStyles();
 
   return (
-      <Container>
+     
     <div className={classes.bg}>
         <Container className={classes.bannerContent}>
         <div className={classes.tagline}>
@@ -58,6 +62,6 @@ export const Banner = () => {
         <Carousel/>
         </Container>
     </div>
-    </Container>
+    
   )
 }
