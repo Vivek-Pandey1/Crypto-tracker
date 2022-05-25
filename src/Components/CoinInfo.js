@@ -1,4 +1,4 @@
-import { CircularProgress, createTheme, InputLabel, makeStyles, MenuItem, Select, ThemeProvider } from '@material-ui/core';
+import {  CircularProgress, createTheme, InputLabel, makeStyles, MenuItem, Select, ThemeProvider } from '@material-ui/core';
 import axios from 'axios';
 import React, { useState, useEffect } from 'react';
 // eslint-disable-next-line
@@ -85,7 +85,7 @@ export const CoinInfo = ({coin}) => {
         </div>
         <div className={classes.subtile}>
             <div style={{marginRight: 50,}}>
-        <InputLabel id="demo-select-small"> Chart for last </InputLabel>
+        <InputLabel id="demo-select-small">For last </InputLabel>
             <Select
               labelId="demo-select-small"
               id="demo-select-small"

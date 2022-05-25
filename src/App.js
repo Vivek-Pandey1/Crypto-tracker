@@ -1,6 +1,7 @@
 import { makeStyles } from "@material-ui/core";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
+import { Footer } from "./Components/Footer";
 import Header from "./Components/Header";
 import { Coinpage } from "./Pages/Coinpage";
 import Homepage from "./Pages/Homepage";
@@ -22,6 +23,7 @@ function App() {
           <Route path="/" element={<Homepage />} exact />
           <Route path="/coins/:id" element={<Coinpage/>} exact/>
         </Routes>
+        <Footer/>
       </div>
     </BrowserRouter>
   );

@@ -42,12 +42,12 @@ export const Coinpage = () => {
            
             <Typography variant='subtitle1'>{  ReactHtmlParser(coin?.description.en.split(".  ")[0])}</Typography>
             <span style={{ display: "flex" }}>
-            <Typography variant="h5" className={classes.heading}>
+            <Typography variant="h6" className={classes.heading}>
               Rank:
             </Typography>
             &nbsp; &nbsp;
             <Typography
-              variant="h5"
+              variant="h6"
               style={{
                 fontFamily: "Montserrat",
               }}
@@ -56,12 +56,12 @@ export const Coinpage = () => {
             </Typography>
           </span>
           <span style={{ display: "flex" }}>
-            <Typography variant="h5" className={classes.heading}>
+            <Typography variant="h6" className={classes.heading}>
               Current Price:
             </Typography>
             &nbsp; &nbsp;
             <Typography
-              variant="h5"
+              variant="h6"
               style={{
                 fontFamily: "Montserrat",
               }}
@@ -73,12 +73,12 @@ export const Coinpage = () => {
             </Typography>
           </span>
           <span style={{ display: "flex" }}>
-            <Typography variant="h5" className={classes.heading}>
+            <Typography variant="h6" className={classes.heading}>
               Market Cap:
             </Typography>
             &nbsp; &nbsp;
             <Typography
-              variant="h5"
+              variant="h6"
               style={{
                 fontFamily: "Montserrat",
               }}
