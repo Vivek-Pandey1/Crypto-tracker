@@ -17,6 +17,7 @@ const useStyles = makeStyles(()=>({
         alignItems:'center',
         marginTop:25,
         padding:20,
+        borderTop:'solid grey 1px'
         },
         subtile:{
             display:'flex',
@@ -97,6 +98,7 @@ export const CoinInfo = ({coin}) => {
               <MenuItem value={30}>30 Days</MenuItem>
               <MenuItem value={90}>3 Months</MenuItem>
               <MenuItem value={365}>1 Year</MenuItem>
+              <MenuItem value={'max'}>Max</MenuItem>
             </Select>
             </div>
             </div>
