@@ -47,7 +47,7 @@ export const Banner = () => {
               fontFamily: "Montserrat",
             }}
           >
-            Crypto Tracker
+            Trending Coins
           </Typography>
           <Typography
             variant="subtitle2"

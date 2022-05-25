@@ -6,6 +6,7 @@ import { SingleCoin } from '../Components/api';
 import { CryptoState } from '../CryptoContext';
 import ReactHtmlParser from 'react-html-parser';
 import { numberWithCommas } from '../Components/Banner/Carousel';
+import { CoinInfo } from '../Components/CoinInfo';
 const useStyles = makeStyles(()=>({
     info:{
         display:'flex',
@@ -92,6 +93,7 @@ export const Coinpage = () => {
             </Typography>
           </span>
         </Container>
+        <CoinInfo coin={coin} />
     </div>
   )
 }
