@@ -9,8 +9,9 @@
 
 Open [http://localhost:3000](http://localhost:3000) in the browser.
 ## Features
-   * Coin price with market cap and global ranking
-   * Coin info with chart
+   * This platform provides a comprehensive and user-friendly interface, featuring dynamic tables and with coin information
+   * Offer real-time data on hundreds of cryptocurrencies, allowing you to sort and filter based on coin names
+   * Delve deeper into individual coins with our detailed coin information feature. Gain access to key data points, including historical price charts, market trends and market cap rankings.
 
 ## Tech Stack Used
    1. React js

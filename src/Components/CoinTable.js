@@ -90,8 +90,8 @@ export const CoinTable = () => {
       <ThemeProvider theme={darkTheme}>
         <Container style={{ textAlign: "center" }}>
           <Typography
-            variant="h4"
-            style={{ marginTop: 20, fontFamily: "Montserrat" }}
+            variant="h5"
+            style={{ marginTop: 15, fontFamily: "Montserrat"}}
           >
             Cryptocurrency Prices by Market Cap
           </Typography>
